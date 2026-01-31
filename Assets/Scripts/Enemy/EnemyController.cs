@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -46,7 +47,6 @@ namespace Enemy
       public float CreamCounter = 2f;
       public float Creamometer;
       public int Score;
-      
 
       private void Start()
       {
@@ -56,28 +56,25 @@ namespace Enemy
          preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
          preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
       }
-
-      private void Update()
-      {
-         
-      }
-   
+      
       private void OnTriggerEnter(Collider other)
       {
          if (other.CompareTag("Cream"))
          {
-            other.TryGetComponent(out Cream projectileCream);
-            Cream += 0.2f;
+            Cream += 0.5f * Time.deltaTime;
          }
 
          if (other.CompareTag("Fruitable"))
          {
-            other.TryGetComponent(out Fruitable projectileFruitable);
-            Fruitable += 0.2f;
+            Fruitable += 0.5f * Time.deltaTime;
          }
          Destroy(other.gameObject);
       }
-      
-      
+
+      IEnumerator OnIsBeingCreamed()
+      {
+         
+         
+      }
    }
 }
