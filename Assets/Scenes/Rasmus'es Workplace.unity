@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 995094420}
   m_Layer: 0
   m_Name: Matty
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +389,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -449,7 +449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5dbad72167f2eb1489e076c297022602, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -511,7 +511,6 @@ MonoBehaviour:
   preferredCream: 0
   preferredFruitable: 0
   creamLevel: 0
-  Roaming: 1
   IsBeingCreamed: 0
   LoosingCream: 0
   IsFullyCreamed: 0
@@ -530,6 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 011d05c5e312d6248b1239eb3d2122b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovment
+  Roaming: 0
   wanderRadius: 20
   wanderTimer: 3
   waitTimer: 2
