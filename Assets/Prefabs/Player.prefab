@@ -506,14 +506,17 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 7757388843088456384}
   projectilePrefab: {fileID: 1240328552154233897, guid: 99023719dec3a7349843b93ee82e2b7b, type: 3}
   projectileSpeed: 2
-  currentAmmo: 20
-  maxAmmo: 20
+  currentAmmo: 3
+  maxAmmo: 3
   fireRate: 0.3
   cam: {fileID: 1386487982518312080}
   playerCream: {fileID: 5196646693679109223}
   playerFruitable: {fileID: 1514929495929394189}
   weaponUI: {fileID: 0}
-  objectsToDeactivate: []
+  objectsToDeactivate:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4576584854300631628
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +748,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1386487982518312080}
     - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
+      propertyPath: maxAmmo
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
+      propertyPath: currentAmmo
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: playerCream
       value: 
       objectReference: {fileID: 5196646693679109223}
@@ -756,6 +767,10 @@ PrefabInstance:
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 2282007171730163086, guid: 6ce03e8935dfc6d4585eeced793ea7e2, type: 3}
+    - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
+      propertyPath: objectsToDeactivate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
