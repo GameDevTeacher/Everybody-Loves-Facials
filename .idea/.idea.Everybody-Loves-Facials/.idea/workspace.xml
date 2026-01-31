@@ -6,11 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/Babananahb.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/Babananahb.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/IMG_20220616_165203.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/IMG_20220616_165203.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/SonicBlitzChaosRender.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/SonicBlitzChaosRender.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/bullet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/bullet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/hollow purple.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/hollow purple.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathman.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/lieman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/lieman.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitman.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +48,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawning/CreamAmmo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalAdditionalCameraData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@b9d1dd437cb9/Tests/Runtime/UGUI/ScrollRect/ScrollRectTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -44,34 +73,33 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="M:\UnityHub\Editors\6000.3.6f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\rasmu\Documents\GitHub\Everybody-Loves-Facials -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\rasmu\Documents\GitHub\Everybody-Loves-Facials" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="M:\UnityHub\Editors\6000.3.6f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\rasmu\Documents\GitHub\Everybody-Loves-Facials -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\rasmu\Documents\GitHub\Everybody-Loves-Facials" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -82,10 +110,9 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -96,10 +123,9 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
   </component>
@@ -114,6 +140,8 @@
       <workItem from="1769857003993" duration="4676000" />
       <workItem from="1769863024344" duration="4351000" />
       <workItem from="1769876755570" duration="3248000" />
+      <workItem from="1769891599997" duration="704000" />
+      <workItem from="1769892315490" duration="2390000" />
     </task>
     <servers />
   </component>

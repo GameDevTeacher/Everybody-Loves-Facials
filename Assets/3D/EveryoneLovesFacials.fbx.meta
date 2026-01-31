@@ -1,9 +1,84 @@
 fileFormatVersion: 2
-guid: 8a077dcfe91a540d3a922dfee30215f7
+guid: 339fff466f2cf4834b6840973e206249
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2D_Mud_Bath_Railing
+    second: {fileID: 2100000, guid: 0d78fd06b310449089f7144f031e427a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground shader
+    second: {fileID: 2100000, guid: 1b5b46daffb3c40e98bb159ab3572c35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mudbath_StairsUV
+    second: {fileID: 2100000, guid: 7c45383dea2074e98af7a48a91d3365b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Planks
+    second: {fileID: 2100000, guid: 150e5d0dd53c84de598d1531884c2950, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pool
+    second: {fileID: 2100000, guid: 073b65cf2ef274fa194e9f8c06ca0c8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scuare_saunaUV
+    second: {fileID: 2100000, guid: 34cb949bd53e54ed5ad77948dcb54653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShiferSten
+    second: {fileID: 2100000, guid: 837392c18702d4c6dbf50f5d24b9f810, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Showerhead
+    second: {fileID: 2100000, guid: 905e99ed72cf64b65b8e8a9b159bff05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: 4a76faccf57a0417db21d922e1b1e4b2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2D_Mud_Bath_Railing
+    second: {fileID: 2800000, guid: 55ffe1d937d90483395bd62e0d583a28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Mudbath_StairsUV
+    second: {fileID: 2800000, guid: 8c1aedff639f94efbb58d546c660d617, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PlanksUV
+    second: {fileID: 2800000, guid: 1f33d143a8474442c94778febc77c386, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pool
+    second: {fileID: 2800000, guid: 57e6d3a76b0b34c3aac674349f3436e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Scuare_saunaUV
+    second: {fileID: 2800000, guid: f1c134d85d9bc4fdd910556a3480fa25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ShieferSteinUV
+    second: {fileID: 2800000, guid: 729344588838543b9a98f0bdea59a533, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
