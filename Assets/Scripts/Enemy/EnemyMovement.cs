@@ -17,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
   // Use this for initialization
   void OnEnable ()
   {
+    
     agent = GetComponent<NavMeshAgent> ();
     timer = wanderTimer;
     timer = waitTimer;
