@@ -39,8 +39,7 @@ namespace Enemy
       }
       
       public CreamLevel creamLevel;
-
-      public bool Roaming;
+      
       public bool IsBeingCreamed;
       public bool LoosingCream;
       public bool IsFullyCreamed;
@@ -56,7 +55,6 @@ namespace Enemy
          preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
          preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
          
-         
       }
       
       private void OnTriggerEnter(Collider other)
@@ -64,7 +62,7 @@ namespace Enemy
          if (other.CompareTag("Cream"))
          {
             CreamCounter += 0.5f;
-            print("damn, i got cummed on by: " + other.name);
+            print("Thanks for the cream Paddy: " + other.name);
             StartCoroutine(OnIsBeingCreamed());
          }
 

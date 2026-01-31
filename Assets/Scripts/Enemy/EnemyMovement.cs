@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyMovement : MonoBehaviour 
+public class EnemyMovement : MonoBehaviour
 {
-
+  public bool Roaming;
   public float wanderRadius;
   public float wanderTimer;
   public float waitTimer;
@@ -20,7 +20,10 @@ public class EnemyMovement : MonoBehaviour
     agent = GetComponent<NavMeshAgent> ();
     timer = wanderTimer;
     timer = waitTimer;
-    StartCoroutine(wander());
+    if (Roaming == true)
+    {
+      StartCoroutine(wander());
+    }
   }
 
   IEnumerator wander()
