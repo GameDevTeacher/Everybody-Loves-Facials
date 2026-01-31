@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/EveryoneLovesFacials.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathman.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bathmancream2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/lieman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/lieman.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/liemancream2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markus.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/markuscream2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitman.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sitmancream2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +107,7 @@
       <workItem from="1769863024344" duration="4351000" />
       <workItem from="1769876755570" duration="3248000" />
       <workItem from="1769891599997" duration="704000" />
-      <workItem from="1769892315490" duration="2390000" />
+      <workItem from="1769892315490" duration="2671000" />
     </task>
     <servers />
   </component>
