@@ -1,13 +1,12 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.AI;
 
-public class WanderingAI : MonoBehaviour 
+public class EnemyMovement : MonoBehaviour 
 {
 
   public float wanderRadius;
   public float wanderTimer;
-  public float waitTime;
+  public float waitTimer;
 
   private Transform target;
   private NavMeshAgent agent;
@@ -18,7 +17,7 @@ public class WanderingAI : MonoBehaviour
   {
     agent = GetComponent<NavMeshAgent> ();
     timer = wanderTimer;
-    
+    timer = waitTimer;
   }
   
   // Update is called once per frame
