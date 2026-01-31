@@ -9,9 +9,7 @@ public class WeaponSwitcher : MonoBehaviour
     // [SerializeField] private Animator animator;
     
     [Header("Keys")]
-    // these inputs needs to be switched out for another way of calling them
     public Key[] keys;
-    public GamepadButton[] buttons;
     
     [Header("Settings")]
     [SerializeField] private float switchTime;
@@ -34,12 +32,8 @@ public class WeaponSwitcher : MonoBehaviour
 
         for (int i = 0; i < keys.Length; i++)
         {
-            if (Keyboard.current[keys[i]].wasPressedThisFrame && _timeSinceLastSwitch >= switchTime || 
-                Gamepad.current != null && Gamepad.current[buttons[i]].wasPressedThisFrame 
-                                        && _timeSinceLastSwitch >= switchTime)
+            if (Keyboard.current[keys[i]].wasPressedThisFrame && _timeSinceLastSwitch >= switchTime)
             {
-                // the if statement checks for input from both gamepad and keyboard, but throws an error when 
-                // it doesn't detect a gamepad.
                 _selectedWeapon = i;
             }
         }
@@ -59,7 +53,6 @@ public class WeaponSwitcher : MonoBehaviour
         }
         
         if (keys == null) keys = new Key[weapons.Length];
-        if (buttons == null) buttons = new GamepadButton[weapons.Length];
     }
 
     private void Select(int weaponIndex)

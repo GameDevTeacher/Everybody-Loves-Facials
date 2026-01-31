@@ -7,6 +7,8 @@ TagManager:
   - Projectile
   - Enemy
   - EnemyProjectile
+  - Fruitable
+  - Cream
   layers:
   - Default
   - TransparentFX
