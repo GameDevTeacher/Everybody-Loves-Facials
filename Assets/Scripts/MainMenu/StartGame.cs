@@ -8,11 +8,17 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene("BenJammin");
     }
 
+    /*
     public void LoadOptions()
     {
         
-    } 
-    
+    }
+    */
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void QuitGame()
     {

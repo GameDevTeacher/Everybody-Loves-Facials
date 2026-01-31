@@ -1,5 +1,6 @@
 using Enemy;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace Player
 {
@@ -23,6 +24,9 @@ namespace Player
     
         [SerializeField] private Camera _camera;
 
+        public List<GameObject> fruitableSlices;
+        private int currentIndex = 0;
+
         public void UpdateShooting(bool shoot)
         {
             if (!shoot || !(_currentAmmo > 0) || !(_fireRateCounter < Time.time)) return;
@@ -37,6 +41,17 @@ namespace Player
             }
             _currentAmmo--;
             _fireRateCounter = Time.time + _fireRate;
+            DeactivateNextObject();
+        }
+
+        private void DeactivateNextObject()
+        {
+            if (fruitableSlices[currentIndex] != null)
+            {
+                fruitableSlices[currentIndex].SetActive(false);
+            }
+
+            currentIndex++;
         }
 
         private void UpdateHitScan()
