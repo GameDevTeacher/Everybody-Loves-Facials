@@ -60,15 +60,23 @@ namespace Enemy
       {
          
       }
-      
    
       private void OnTriggerEnter(Collider other)
       {
          if (other.CompareTag("Cream"))
          {
             other.TryGetComponent(out Cream projectileCream);
+            
          }
+
+         if (other.CompareTag("Fruitable"))
+         {
+            other.TryGetComponent(out Fruitable projectileFruitable);
+            
+         }
+         Destroy(other.gameObject);
       }
+      
       
    }
 }
