@@ -1,12 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.LowLevel;
 
 public class WeaponSwitcher : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform[] weapons;
-    // [SerializeField] private Animator animator;
     
     [Header("Keys")]
     public Key[] keys;
@@ -16,7 +14,6 @@ public class WeaponSwitcher : MonoBehaviour
 
     private int _selectedWeapon;
     private float _timeSinceLastSwitch;
-    
 
     private void Start()
     {
