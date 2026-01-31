@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Weapon : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private Cream playerCream;
     [SerializeField] private Fruitable playerFruitable;
+
+    [Header("Deactivating")]
+    public List<GameObject> objectsToDeactivate;
+    private int currentIndex = 0;
     
     public void UpdateCream(bool shoot)
     {
@@ -60,6 +65,25 @@ public class Weapon : MonoBehaviour
         
         currentAmmo--;
         _fireRateCounter = Time.time + fireRate;
+        DeactivateNextObject();
+    }
+
+    private void DeactivateNextObject()
+    {
+        if (objectsToDeactivate != null && currentIndex < objectsToDeactivate.Count)
+        {
+            if (objectsToDeactivate[currentIndex] != null)
+            {
+                objectsToDeactivate[currentIndex].SetActive(false);
+                Debug.Log("Deactivated; " + objectsToDeactivate[currentIndex].name);
+            }
+        
+            currentIndex++;
+        }
+        else
+        {
+            Debug.Log("No More Objects To Deactivate");
+        }
     }
     
     private Vector3 GetMoveDirection()
