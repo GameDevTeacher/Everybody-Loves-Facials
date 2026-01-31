@@ -5,15 +5,9 @@ public class StartGame : MonoBehaviour
 {
     public void LoadGame()
     {
-        SceneManager.LoadScene("BenJammin");
+        //Change to main game scene
+        SceneManager.LoadScene("SampleScene");
     }
-    
-    /*
-    public void LoadOptions()
-    {
-        
-    }
-    */
 
     public void LoadMainMenu()
     {

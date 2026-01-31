@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations;
 using Random = UnityEngine.Random;
 
 namespace Enemy
@@ -45,7 +46,7 @@ namespace Enemy
       public bool IsFullyCreamed;
       public float CreamCounter = 2f;
       public float Creamometer;
-      public float Score;
+      public int Score;
 
       private void Start()
       {
@@ -54,6 +55,7 @@ namespace Enemy
          
          preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
          preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
+         
          
       }
       
