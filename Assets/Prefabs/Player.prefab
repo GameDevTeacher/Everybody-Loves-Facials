@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 8522953064117206591}
   - component: {fileID: 2497014468291183652}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: FruitableWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -512,6 +512,8 @@ MonoBehaviour:
   cam: {fileID: 1386487982518312080}
   playerCream: {fileID: 5196646693679109223}
   playerFruitable: {fileID: 1514929495929394189}
+  weaponUI: {fileID: 0}
+  objectsToDeactivate: []
 --- !u!1 &4576584854300631628
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6278351680639476773, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: m_Name
-      value: ThreeProngedBall
+      value: CreamWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 6278351680639476773, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: m_IsActive

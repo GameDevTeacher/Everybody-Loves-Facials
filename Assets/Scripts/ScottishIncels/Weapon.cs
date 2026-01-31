@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -28,11 +29,15 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private Cream playerCream;
     [SerializeField] private Fruitable playerFruitable;
+    [SerializeField] private GameObject weaponUI;
 
     [Header("Deactivating")]
     public List<GameObject> objectsToDeactivate;
-    private int currentIndex = 0;
-    
+    private int _currentIndex = 0;
+
+    private void OnEnable() { weaponUI.SetActive(true); } 
+    private void OnDisable() { weaponUI.SetActive(false); }
+
     public void UpdateCream(bool shoot)
     {
         if (!shoot || !(currentAmmo > 0) || !(_fireRateCounter < Time.time)) return;
@@ -70,19 +75,19 @@ public class Weapon : MonoBehaviour
 
     private void DeactivateNextObject()
     {
-        if (objectsToDeactivate != null && currentIndex < objectsToDeactivate.Count)
+        if (objectsToDeactivate != null && _currentIndex < objectsToDeactivate.Count)
         {
-            if (objectsToDeactivate[currentIndex] != null)
+            if (objectsToDeactivate[_currentIndex] != null)
             {
-                objectsToDeactivate[currentIndex].SetActive(false);
-                Debug.Log("Deactivated; " + objectsToDeactivate[currentIndex].name);
+                objectsToDeactivate[_currentIndex].SetActive(false);
+                print("Deactivated; " + objectsToDeactivate[_currentIndex].name);
             }
         
-            currentIndex++;
+            _currentIndex++;
         }
         else
         {
-            Debug.Log("No More Objects To Deactivate");
+            print("No More Objects To Deactivate");
         }
     }
     
