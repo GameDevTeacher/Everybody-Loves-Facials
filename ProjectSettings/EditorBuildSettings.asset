@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/BenJammin.unity
     guid: 913b8815d40c7774e906ec16e6f01fe2
   - enabled: 1
-    path: Assets/Scenes/DeathScene.unity
-    guid: a442fc17e3b8bd94aa13550237011aec
+    path: Assets/Scenes/WinScene.unity
+    guid: e8fbb1aaa02c70845b472352f891c08b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
