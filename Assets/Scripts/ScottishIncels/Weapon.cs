@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Weapon : MonoBehaviour
 {
@@ -40,6 +41,15 @@ public class Weapon : MonoBehaviour
 
     public void UpdateCream(bool shoot)
     {
+        //THIS IS A TEST LOSE CON, DELETE WHEN YOU BUILD
+        if (currentAmmo <= 0)
+        {
+            SceneManager.LoadScene("DeathScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        
+        
         if (!shoot || !(currentAmmo > 0) || !(_fireRateCounter < Time.time)) return;
         
         var projectileClone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);

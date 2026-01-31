@@ -7,7 +7,7 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("BenJammin");
     }
-
+    
     /*
     public void LoadOptions()
     {
