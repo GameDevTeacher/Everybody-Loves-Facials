@@ -1,36 +1,12 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Animations;
-using Random = UnityEngine.Random;
 
 namespace Enemy
 {
    public class EnemyController : MonoBehaviour
    {
-      public enum Preferred_Cream
-      {
-         Natural,
-         LabMade,
-         AloeVera,
-         HimalayanPinkSalt
-      }
-
-      public Preferred_Cream preferredCream;
-
-      public enum Preferred_Fruitable
-      {
-         Cucumber,
-         Eggplant,
-         Orange,
-         Apple,
-         Potato,
-         Broccoli,
-         Lemon
-      }
-      
-      public Preferred_Fruitable preferredFruitable;
+      public Cream preferredCream;
+      public Fruitable preferredFruitable;
 
       public enum CreamLevel
       {
@@ -41,29 +17,31 @@ namespace Enemy
       
       public CreamLevel creamLevel;
       
-      public bool IsBeingCreamed;
-      public bool LoosingCream;
-      public bool IsFullyCreamed;
-      public float CreamCounter = 2f;
-      public float Creamometer;
-      public int Score;
+      public bool isBeingCreamed;
+      public bool loosingCream;
+      public bool isFullyCreamed;
+      public float creamCounter = 2f;
+      public float creamometer;
+      public int score;
 
       private void Start()
       {
-         Array fruitableValues = Enum.GetValues(typeof(Preferred_Fruitable));
+         preferredCream = GetComponent<Cream>();
+         preferredFruitable = GetComponent<Fruitable>();
+         /*Array fruitableValues = Enum.GetValues(typeof(Preferred_Fruitable));
          Array creamValues = Enum.GetValues(typeof(Preferred_Cream));
          
          preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
          preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
          
-         
+         */
       }
       
       private void OnTriggerEnter(Collider other)
       {
          if (other.CompareTag("Cream"))
          {
-            CreamCounter += 0.5f;
+            creamCounter += 0.5f;
             print("Thanks for the cream Paddy: " + other.name);
             StartCoroutine(OnIsBeingCreamed());
          }
@@ -77,18 +55,18 @@ namespace Enemy
 
       IEnumerator OnIsBeingCreamed()
       {
-         IsBeingCreamed = true;
-         if (CreamCounter == 50f)
+         isBeingCreamed = true;
+         if (Mathf.Approximately(creamCounter, 50f))
          {
-            IsFullyCreamed = true;
+            isFullyCreamed = true;
          }
          yield return new WaitForSeconds(10f);
-         IsFullyCreamed  = false;
+         isFullyCreamed  = false;
          
 
-         if (IsFullyCreamed == false)
+         if (isFullyCreamed == false)
          {
-            CreamCounter -= 0.5f;
+            creamCounter -= 0.5f;
          }
       }
       
