@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="" />
+    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/Babananahb.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/Babananahb.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/IMG_20220616_165203.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/IMG_20220616_165203.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/SonicBlitzChaosRender.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/SonicBlitzChaosRender.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/bullet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/bullet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarmineWorkshop/hollow purple.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarmineWorkshop/hollow purple.jpg.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +113,7 @@
       <workItem from="1769807989730" duration="2860000" />
       <workItem from="1769857003993" duration="4676000" />
       <workItem from="1769863024344" duration="4351000" />
-      <workItem from="1769876755570" duration="1991000" />
+      <workItem from="1769876755570" duration="3248000" />
     </task>
     <servers />
   </component>
