@@ -1,29 +1,20 @@
-using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class FruitableAmmo : MonoBehaviour
 {
     public int ammo = 3;
-    public Types type;
     public Sprite[] fruitableSprites;
-
+    
     private SpriteRenderer _spriteRenderer;
     private Transform _target;
+    [HideInInspector]public Fruitable fruitable;
     
-    public enum Types
-    {
-        Cucumber,
-        Eggplant,
-        Orange,
-        Lemon
-    }
     
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        type = (Types)Random.Range(0, Enum.GetValues(typeof(Types)).Length);
-        _spriteRenderer.sprite = fruitableSprites[(int)type];
+        fruitable = GetComponent<Fruitable>();
+        _spriteRenderer.sprite = fruitableSprites[(int)fruitable.type];
         _target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
