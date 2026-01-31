@@ -1,99 +1,74 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Enemy
 {
    public class EnemyController : MonoBehaviour
    {
-      [Header("Health")]
-      [SerializeField] private float _health = 100;
+      public enum Preferred_Cream
+      {
+         Natural,
+         LabMade,
+         AloeVera,
+         HimalayanPinkSalt
+      }
 
-      [Header("View")] 
-      [SerializeField] private float _viewCastRadius;
-      [SerializeField] private float _viewRange;
-      private Transform _target;
-      private RaycastHit _hitInfo;
+      public Preferred_Cream preferredCream;
 
-      [Header("Attack")] [Space(5)]
-      [SerializeField] private GameObject _projectilePrefab;
-      [SerializeField] private Transform _projectileSpawnPoint;
-      [SerializeField] private float _projectileDamage;
-      [SerializeField] private float _projectileSpeed;
-      [SerializeField] private float _projectileRange;
-      [SerializeField] private float _fireRate;
-   
-      private float _fireRateCounter;
+      public enum Preferred_Fruitable
+      {
+         Cucumber,
+         Eggplant,
+         Orange,
+         Apple,
+         Potato,
+         Broccoli,
+         Lemon
+      }
+      
+      public Preferred_Fruitable preferredFruitable;
 
-      private void Start() => _target = GameObject.FindWithTag("Player").transform;
+      public enum CreamLevel
+      {
+         NoCream,
+         Creamed,
+         ThickCream
+      }
+      
+      public CreamLevel creamLevel;
+      
+      
+      [Header("Cream")]
+      public bool IsBeingCreamed;
+      public bool LoosingCream;
+      public bool IsFullyCreamed;
+      public float CreamCounter = 2f;
+      public float Creamometer;
+      public int Score;
+
+      private void Start()
+      {
+         Array fruitableValues = Enum.GetValues(typeof(Preferred_Fruitable));
+         Array creamValues = Enum.GetValues(typeof(Preferred_Cream));
+         
+         preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
+         preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
+      }
 
       private void Update()
       {
-         UpdateTargetVisibility();
-      }
-
-      private void UpdateTargetVisibility()
-      {
-         if (_target == null) return;
-         if (Vector3.Distance(_target.position, transform.position) > _viewRange) return;
          
-         Physics.SphereCast(_projectileSpawnPoint.position, _viewCastRadius, 
-            GetProjectileDirection(), out _hitInfo);
-
-         if (_hitInfo.collider == null) return;
-         if (!_hitInfo.collider.CompareTag("Player")) return;
-
-         UpdateProjectile();
       }
-   
-      private void UpdateProjectile()
-      {
-         if (_fireRateCounter > Time.time) return;
-
-         var projectileClone = Instantiate(_projectilePrefab, 
-            _projectileSpawnPoint.position, _projectileSpawnPoint.rotation);
-         
-         Destroy(projectileClone, 5f);
-         projectileClone.tag = "EnemyProjectile";
-
-         #region GET COMPONENTS
-         projectileClone.TryGetComponent(out Rigidbody rb); 
-         rb.linearVelocity = GetProjectileDirection() * _projectileSpeed;
-
-         projectileClone.TryGetComponent(out BulletController bulletController);
-         bulletController.projectileDamage = _projectileDamage;
-         #endregion
-         
-         _fireRateCounter = Time.time + _fireRate;
-      }
-   
-      private Vector3 GetProjectileDirection()
-      {
-         return (_target.position - transform.position).normalized;
-      }
+      
    
       private void OnTriggerEnter(Collider other)
       {
-         if (!other.CompareTag("Projectile")) return;
-         
-         other.TryGetComponent(out BulletController bulletController);
-         TakeDamage(bulletController.projectileDamage);
-         
-         Destroy(other.gameObject);
-      }
-   
-      public void TakeDamage(float damage)
-      {
-         _health -= damage;
-         if (_health > 0) return;
-         Destroy(gameObject);
+         if (other.CompareTag("Cream"))
+         {
+            // other.TryGetComponent(out Cream projectileCream);
+         }
       }
       
-      private void OnDrawGizmos()
-      {
-         if (_target == null) return;
-         
-         Gizmos.color = Color.red;
-         Gizmos.DrawWireSphere(_hitInfo.point, _viewCastRadius);
-         Gizmos.DrawRay(_projectileSpawnPoint.position, GetProjectileDirection() * _projectileRange);
-      }
    }
 }
