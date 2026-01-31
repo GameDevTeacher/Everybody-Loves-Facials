@@ -56,7 +56,7 @@ namespace Enemy
          preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
          preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
          
-         Roaming = 
+         
       }
       
       private void OnTriggerEnter(Collider other)
