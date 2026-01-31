@@ -607,7 +607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovment
   wanderRadius: 10
   wanderTimer: 3
-  waitTime: 0
+  waitTimer: 2
 --- !u!1 &1391074815
 GameObject:
   m_ObjectHideFlags: 0
