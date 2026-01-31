@@ -39,8 +39,7 @@ namespace Enemy
       }
       
       public CreamLevel creamLevel;
-
-      public bool Roaming;
+      
       public bool IsBeingCreamed;
       public bool LoosingCream;
       public bool IsFullyCreamed;
