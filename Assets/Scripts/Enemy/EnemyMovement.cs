@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -20,6 +22,10 @@ public class EnemyMovement : MonoBehaviour
     agent = GetComponent<NavMeshAgent> ();
     timer = wanderTimer;
     timer = waitTimer;
+  }
+
+  private void Start()
+  {
     if (Roaming == true)
     {
       StartCoroutine(wander());
@@ -37,9 +43,9 @@ public class EnemyMovement : MonoBehaviour
   }
   
   // Update is called once per frame
-  void Update ()
+  /*void Update ()
   {
-   /* timer += Time.deltaTime;
+    timer += Time.deltaTime;
 
     if (timer >= wanderTimer)
     {
@@ -47,8 +53,8 @@ public class EnemyMovement : MonoBehaviour
       agent.SetDestination(newPos);
       timer = 0;
       
-    }*/
-  }
+    }
+  }*/
 
   public Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
   {
