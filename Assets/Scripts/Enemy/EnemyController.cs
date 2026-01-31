@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -66,13 +67,13 @@ namespace Enemy
          if (other.CompareTag("Cream"))
          {
             other.TryGetComponent(out Cream projectileCream);
-            
+            Cream += 0.2f;
          }
 
          if (other.CompareTag("Fruitable"))
          {
             other.TryGetComponent(out Fruitable projectileFruitable);
-            
+            Fruitable += 0.2f;
          }
          Destroy(other.gameObject);
       }
