@@ -66,7 +66,7 @@ namespace Enemy
       {
          if (other.CompareTag("Cream"))
          {
-            // other.TryGetComponent(out Cream projectileCream);
+            other.TryGetComponent(out Cream projectileCream);
          }
       }
       
