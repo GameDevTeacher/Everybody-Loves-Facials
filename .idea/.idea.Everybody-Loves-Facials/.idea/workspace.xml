@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MementosWorkshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MementosWorkshop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/WeaponSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/WeaponSwitcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScottishIncels/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScottishIncels/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +106,7 @@
       <workItem from="1769807989730" duration="2860000" />
       <workItem from="1769857003993" duration="4676000" />
       <workItem from="1769863024344" duration="4351000" />
-      <workItem from="1769876755570" duration="1304000" />
+      <workItem from="1769876755570" duration="1991000" />
     </task>
     <servers />
   </component>

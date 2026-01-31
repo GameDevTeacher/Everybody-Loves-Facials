@@ -511,7 +511,7 @@ MonoBehaviour:
   preferredCream: 0
   preferredFruitable: 0
   creamLevel: 0
-  Roaming: 0
+  Roaming: 1
   IsBeingCreamed: 0
   LoosingCream: 0
   IsFullyCreamed: 0
