@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 1135049105064745860}
   - component: {fileID: 5466061628961997134}
   - component: {fileID: 6480164843479668053}
+  - component: {fileID: 8951672591000931533}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -427,6 +428,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8951672591000931533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745918291898038377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97368d2925edfe2479eeffc35d317d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
+  timerText: {fileID: 5572990380520853942}
+  remainingTime: 5
 --- !u!1 &3769856793493139446
 GameObject:
   m_ObjectHideFlags: 0
