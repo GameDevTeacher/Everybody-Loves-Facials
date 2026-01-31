@@ -46,7 +46,7 @@ namespace Enemy
       public bool IsFullyCreamed;
       public float CreamCounter = 2f;
       public float Creamometer;
-      public int Score;
+      public float Score;
 
       private void Start()
       {
@@ -63,20 +63,34 @@ namespace Enemy
       {
          if (other.CompareTag("Cream"))
          {
-            Cream += 0.5f * Time.deltaTime;
+            CreamCounter += 0.5f;
+            print("damn, i got cummed on by: " + other.name);
+            StartCoroutine(OnIsBeingCreamed());
          }
 
          if (other.CompareTag("Fruitable"))
          {
-            Fruitable += 0.5f * Time.deltaTime;
+            
          }
          Destroy(other.gameObject);
       }
 
       IEnumerator OnIsBeingCreamed()
       {
+         IsBeingCreamed = true;
+         if (CreamCounter == 50f)
+         {
+            IsFullyCreamed = true;
+         }
+         yield return new WaitForSeconds(10f);
+         IsFullyCreamed  = false;
          
-         
+
+         if (IsFullyCreamed == false)
+         {
+            CreamCounter -= 0.5f;
+         }
       }
+      
    }
 }
