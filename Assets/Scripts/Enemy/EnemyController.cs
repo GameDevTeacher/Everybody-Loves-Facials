@@ -37,15 +37,15 @@ namespace Enemy
       }
       
       public CreamLevel creamLevel;
-      
-      
-      [Header("Cream")]
+
+      public bool Roaming;
       public bool IsBeingCreamed;
       public bool LoosingCream;
       public bool IsFullyCreamed;
       public float CreamCounter = 2f;
       public float Creamometer;
       public int Score;
+      
 
       private void Start()
       {
