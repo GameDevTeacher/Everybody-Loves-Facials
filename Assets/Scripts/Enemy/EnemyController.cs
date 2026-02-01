@@ -80,13 +80,9 @@ namespace Enemy
 
          if (other.CompareTag("Fruitable"))
          {
-            if (isFullyCreamed == true)
-            {
-               score++;
-               StopCoroutine(OnIsBeingCreamed());
-            }
+            
+            StopCoroutine(OnIsBeingCreamed());
          }
-         
          
          Destroy(other.gameObject);
       }
@@ -96,13 +92,16 @@ namespace Enemy
          isBeingCreamed = true;
          if (Mathf.Approximately(creamCounter, 50f))
          {
-            
-            isFullyCreamed = true;
+            creamLevel = CreamLevel.Creamed;
          }
+         else if (Mathf.Approximately(creamCounter, 70f))
+         {
+            creamLevel = CreamLevel.ThickCream;
+         }
+         
          yield return new WaitForSeconds(10f);
          isFullyCreamed  = false;
          
-
          if (isFullyCreamed == false)
          {
             creamCounter -= 0.5f;
