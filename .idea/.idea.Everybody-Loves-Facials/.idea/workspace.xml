@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/2D_Mud_Bath_Railing.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/2D_Mud_Bath_Railing.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScottishIncels/Fruitable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScottishIncels/Fruitable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScottishIncels/PickUpTesting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScottishIncels/PickUpTesting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/CreamAmmo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/CreamAmmo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/FruitableAmmo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/FruitableAmmo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +108,7 @@
       <workItem from="1769876755570" duration="3248000" />
       <workItem from="1769891599997" duration="704000" />
       <workItem from="1769892315490" duration="2671000" />
-      <workItem from="1769901483114" duration="3580000" />
+      <workItem from="1769901483114" duration="3623000" />
     </task>
     <servers />
   </component>

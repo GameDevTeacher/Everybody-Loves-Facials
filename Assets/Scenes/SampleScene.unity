@@ -1336,17 +1336,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1650676067401470031, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
-      propertyPath: waitTimer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650676067401470031, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
-      propertyPath: wanderTimer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6717580576162289980, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 6910013659650681724, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
       propertyPath: m_LocalPosition.x
