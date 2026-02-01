@@ -5,6 +5,12 @@ public class PickUpTesting : MonoBehaviour
     private Cream _playerCream;
     private Fruitable _playerFruitable;
 
+    public Sprite[] creamGunType;
+    public Sprite[] fruitableSliceType;
+
+    public SpriteRenderer creamGunRenderer;
+    public SpriteRenderer fruitableRenderer;
+
     private void Start()
     {
         _playerCream = GetComponent<Cream>();
@@ -21,6 +27,7 @@ public class PickUpTesting : MonoBehaviour
             other.TryGetComponent(out FruitableAmmo fruitableAmmo);
             
             _playerFruitable.type = fruitable.type;
+            
             fruitableAmmo.ResetSpawn();
             Destroy(other.gameObject);
         }
