@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4915789262104549109}
   m_Father: {fileID: 555974319438736491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &8149319630702699571
@@ -162,14 +163,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805085938682413788}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.481, y: -0.164, z: 0.226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.48099995, y: -0.16399992, z: 0.22600007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3102502356317056469}
-  - {fileID: 1357782306781346936}
-  m_Father: {fileID: 1032751640593444911}
+  - {fileID: 1754814475462164926}
+  - {fileID: 1505796246030294210}
+  m_Father: {fileID: 407218263172845163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1151273728925629297
 MonoBehaviour:
@@ -184,8 +185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSwitcher
   weapons:
-  - {fileID: 3102502356317056469}
-  - {fileID: 0}
+  - {fileID: 1754814475462164926}
+  - {fileID: 1505796246030294210}
   keys: 290000002a000000
   switchTime: 0.2
 --- !u!1 &850126882772209171
@@ -197,13 +198,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505796246030294210}
+  - component: {fileID: 1925741975843721452}
   m_Layer: 0
   m_Name: FruitableHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1505796246030294210
 Transform:
   m_ObjectHideFlags: 0
@@ -212,16 +214,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850126882772209171}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.481, y: -0.43600002, z: -0.226}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2917820662215954743}
   - {fileID: 2255482426946206966}
   - {fileID: 329761056484508768}
   - {fileID: 2013484475386693530}
-  m_Father: {fileID: 555974319438736491}
+  m_Father: {fileID: 4915789262104549109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925741975843721452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850126882772209171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b71df286b976d48a3cd904e1cc5334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
+  currentType: 1
+  projectileSpawnPoint: {fileID: 2917820662215954743}
+  projectilePrefab: {fileID: 3167923781611909473, guid: 48b70aa715dcab044be3c12a33fabd99, type: 3}
+  projectileSpeed: 3
+  currentAmmo: 4
+  maxAmmo: 4
+  fireRate: 0.0001
+  cam: {fileID: 8149319630702699571}
+  playerCream: {fileID: 4725339536876383053}
+  playerFruitable: {fileID: 8025066190249805494}
+  fruitableSprites:
+  - {fileID: 21300000, guid: c8314ebc16e2d437abe879885f33458f, type: 3}
+  - {fileID: 21300000, guid: ab6fcbfdda36e4304ac412768fe39495, type: 3}
+  - {fileID: 21300000, guid: 5244c949ef4804f95a4ab9f8e3f7e7c8, type: 3}
+  - {fileID: 21300000, guid: c892416234cbe433e9f250016f86393a, type: 3}
+  ammoText: {fileID: 0}
 --- !u!1 &866520376102408175
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1754814475462164926}
   - component: {fileID: 8027349563713991249}
+  - component: {fileID: 996500077582510951}
   m_Layer: 0
   m_Name: CreamGun
   m_TagString: Untagged
@@ -247,12 +279,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866520376102408175}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.12, y: 0.52, z: 0.74}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.6009999, y: 0.08399996, z: 0.51400024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 555974319438736491}
+  m_Children:
+  - {fileID: 6844587740136809466}
+  m_Father: {fileID: 4915789262104549109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8027349563713991249
 SpriteRenderer:
@@ -313,6 +346,34 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &996500077582510951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866520376102408175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b71df286b976d48a3cd904e1cc5334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
+  currentType: 0
+  projectileSpawnPoint: {fileID: 6844587740136809466}
+  projectilePrefab: {fileID: 4496258398208864345, guid: f655bca8f191e56418b155bd527c453e, type: 3}
+  projectileSpeed: 2
+  currentAmmo: 20
+  maxAmmo: 20
+  fireRate: 0.001
+  cam: {fileID: 8149319630702699571}
+  playerCream: {fileID: 4725339536876383053}
+  playerFruitable: {fileID: 8025066190249805494}
+  fruitableSprites:
+  - {fileID: 21300000, guid: c8314ebc16e2d437abe879885f33458f, type: 3}
+  - {fileID: 21300000, guid: ab6fcbfdda36e4304ac412768fe39495, type: 3}
+  - {fileID: 21300000, guid: 5244c949ef4804f95a4ab9f8e3f7e7c8, type: 3}
+  - {fileID: 21300000, guid: c892416234cbe433e9f250016f86393a, type: 3}
+  ammoText: {fileID: 0}
 --- !u!1 &1018852923827247343
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,8 +508,6 @@ Transform:
   m_Children:
   - {fileID: 1032751640593444911}
   - {fileID: 407218263172845163}
-  - {fileID: 1754814475462164926}
-  - {fileID: 1505796246030294210}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &267397464817310494
@@ -594,7 +653,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208836630833659684}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcaf038e12efb5d469531504ad850cd4, type: 3}
   m_Name: 
@@ -648,6 +707,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ab6fcbfdda36e4304ac412768fe39495, type: 3}
   - {fileID: 21300000, guid: 5244c949ef4804f95a4ab9f8e3f7e7c8, type: 3}
   - {fileID: 21300000, guid: c892416234cbe433e9f250016f86393a, type: 3}
+  creamGunRenderer: {fileID: 8027349563713991249}
+  fruitableRenderer: {fileID: 2464581938718858894}
 --- !u!114 &4725339536876383053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,7 +853,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &2704556861866537075
+--- !u!1 &3595490347010720661
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -800,117 +861,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3102502356317056469}
-  - component: {fileID: 7953077123466068433}
-  - component: {fileID: 8522953064117206591}
-  - component: {fileID: 2497014468291183652}
+  - component: {fileID: 6844587740136809466}
   m_Layer: 0
-  m_Name: FruitableWeapon
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3102502356317056469
+--- !u!4 &6844587740136809466
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2704556861866537075}
+  m_GameObject: {fileID: 3595490347010720661}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.09224188, z: -0, w: 0.99573666}
-  m_LocalPosition: {x: -0.118, y: -0.15100005, z: 0.521}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.065, y: 0, z: 0.724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7757388843088456384}
-  m_Father: {fileID: 4915789262104549109}
-  m_LocalEulerAnglesHint: {x: 0, y: -10.585, z: 0}
---- !u!33 &7953077123466068433
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2704556861866537075}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8522953064117206591
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2704556861866537075}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2497014468291183652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2704556861866537075}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77b71df286b976d48a3cd904e1cc5334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  currentType: 1
-  projectileSpawnPoint: {fileID: 7757388843088456384}
-  projectilePrefab: {fileID: 1240328552154233897, guid: 99023719dec3a7349843b93ee82e2b7b, type: 3}
-  projectileSpeed: 2
-  currentAmmo: 3
-  maxAmmo: 3
-  fireRate: 0.3
-  cam: {fileID: 1386487982518312080}
-  playerCream: {fileID: 4725339536876383053}
-  playerFruitable: {fileID: 8025066190249805494}
-  weaponUI: {fileID: 0}
-  objectsToDeactivate:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 1754814475462164926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4576584854300631628
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +917,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2951852892009519942}
-  - {fileID: 4915789262104549109}
   m_Father: {fileID: 555974319438736491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1386487982518312080
@@ -1232,7 +1204,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &6254722210436467255
+--- !u!1 &8941464072210645604
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1240,117 +1212,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7757388843088456384}
+  - component: {fileID: 2917820662215954743}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: Spawnpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7757388843088456384
+--- !u!4 &2917820662215954743
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6254722210436467255}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3102502356317056469}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &8795569177560636315
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1357782306781346936}
-  - component: {fileID: 1582063691067765549}
-  m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1357782306781346936
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8795569177560636315}
+  m_GameObject: {fileID: 8941464072210645604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.23}
+  m_LocalPosition: {x: 0.489, y: 0.578, z: 1.283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4915789262104549109}
+  m_Father: {fileID: 1505796246030294210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1582063691067765549
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8795569177560636315}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 94c49e9e62049774cbd4e011690d75db, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0

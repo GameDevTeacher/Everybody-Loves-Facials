@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using System.Collections.Generic;
+using TMPro;
 
 public class Weapon : MonoBehaviour
 {
@@ -29,19 +29,27 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private Cream playerCream;
     [SerializeField] private Fruitable playerFruitable;
-    [SerializeField] private GameObject weaponUI;
+    [SerializeField] private Sprite[] fruitableSprites;
 
-    [Header("Deactivating")]
-    public List<GameObject> objectsToDeactivate;
-    private int _currentIndex = 0;
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI ammoText;
 
-    private void OnEnable() { weaponUI.SetActive(true); } 
-    private void OnDisable() { weaponUI.SetActive(false); }
+    private void OnEnable()
+    {
+        ammoText.gameObject.SetActive(true);
+        ammoText.text = currentType + ": " + currentAmmo;
+    }
+
+    private void OnDisable()
+    {
+        if (ammoText != null)
+        {
+            ammoText.gameObject.SetActive(false);
+        }
+    }
 
     public void UpdateCream(bool shoot)
     {
-        
-        
         if (!shoot || !(currentAmmo > 0) || !(_fireRateCounter < Time.time)) return;
         
         var projectileClone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
@@ -54,6 +62,9 @@ public class Weapon : MonoBehaviour
         cream.type = playerCream.type;
         
         currentAmmo--;
+        
+        ammoText.text = currentType + ": " + currentAmmo;
+        
         _fireRateCounter = Time.time + fireRate;
     }
 
@@ -70,27 +81,29 @@ public class Weapon : MonoBehaviour
         projectileClone.TryGetComponent(out Fruitable fruitable);
         fruitable.type = playerFruitable.type;
         
-        currentAmmo--;
-        _fireRateCounter = Time.time + fireRate;
-        DeactivateNextObject();
-    }
+        projectileClone.TryGetComponent(out SpriteRenderer spriteRenderer);
 
-    private void DeactivateNextObject()
-    {
-        if (objectsToDeactivate != null && _currentIndex < objectsToDeactivate.Count)
+        switch (fruitable.type)
         {
-            if (objectsToDeactivate[_currentIndex] != null)
-            {
-                objectsToDeactivate[_currentIndex].SetActive(false);
-                print("Deactivated; " + objectsToDeactivate[_currentIndex].name);
-            }
+            case Fruitable.Type.Cucumber:
+                spriteRenderer.sprite = fruitableSprites[0];
+                break;
+            case Fruitable.Type.Eggplant:
+                spriteRenderer.sprite = fruitableSprites[1];
+                break;
+            case Fruitable.Type.Orange:
+                spriteRenderer.sprite = fruitableSprites[2];
+                break;
+            case Fruitable.Type.Lemon:
+                spriteRenderer.sprite = fruitableSprites[3];
+                break;
+        }
         
-            _currentIndex++;
-        }
-        else
-        {
-            print("No More Objects To Deactivate");
-        }
+        currentAmmo--;
+        
+        ammoText.text = currentType + ": " + currentAmmo;
+        
+        _fireRateCounter = Time.time + fireRate;
     }
     
     private Vector3 GetMoveDirection()
