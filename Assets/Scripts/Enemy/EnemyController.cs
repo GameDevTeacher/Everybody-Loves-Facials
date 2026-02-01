@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -65,6 +66,11 @@ namespace Enemy
          }
       }
 
+      private void OnContactWhitCream()
+      {
+         
+      }
+
       private void OnTriggerEnter(Collider other)
       {
          if (other.CompareTag("Cream"))
@@ -76,7 +82,11 @@ namespace Enemy
 
          if (other.CompareTag("Fruitable"))
          {
-            
+            if (isFullyCreamed == true)
+            {
+               score++;
+               StopCoroutine(OnIsBeingCreamed());
+            }
          }
          Destroy(other.gameObject);
       }
@@ -97,6 +107,10 @@ namespace Enemy
             creamCounter -= 0.5f;
          }
       }
-      
+
+      public void OnAudioFilterRead(float[] data, int channels)
+      {
+         
+      }
    }
 }
