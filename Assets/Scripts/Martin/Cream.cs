@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Cream : MonoBehaviour
 {
@@ -13,4 +15,14 @@ public class Cream : MonoBehaviour
     }
     
     public Type type;
+
+    private void Awake()
+    {
+        if (transform.CompareTag("FruitableProjectile") || transform.CompareTag("CreamProjectile")) return;
+        
+        var values = Enum.GetValues(typeof(Type));
+        var rand = Random.Range(0, values.Length);
+        Type randomType = (Type)values.GetValue(rand);
+        type = randomType;
+    }
 }

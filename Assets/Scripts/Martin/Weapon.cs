@@ -34,6 +34,15 @@ public class Weapon : MonoBehaviour
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI ammoText;
 
+    [Header("Audio")] 
+    public AudioClip clip;
+    private AudioSource _source;
+
+    private void Start()
+    {
+        _source = GetComponentInParent<AudioSource>();
+    }
+
     private void OnEnable()
     {
         ammoText.gameObject.SetActive(true);
@@ -50,9 +59,22 @@ public class Weapon : MonoBehaviour
 
     public void UpdateCream(bool shoot)
     {
+
+        if (shoot == false)
+        {
+            _source.Stop();
+        }
+        
         if (!shoot || !(currentAmmo > 0) || !(_fireRateCounter < Time.time)) return;
         
         var projectileClone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
+
+        if (!_source.isPlaying)
+        {
+            _source.clip = clip;
+            _source.Play();
+        }
+     
         Destroy(projectileClone, 5f);
             
         projectileClone.TryGetComponent(out Rigidbody rigidBody);
@@ -75,6 +97,9 @@ public class Weapon : MonoBehaviour
         var projectileClone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
         Destroy(projectileClone, 5f);
             
+        _source.clip = clip;
+        _source.Play();
+        
         projectileClone.TryGetComponent(out Rigidbody rigidBody);
         rigidBody.linearVelocity = GetMoveDirection() * projectileSpeed;
         

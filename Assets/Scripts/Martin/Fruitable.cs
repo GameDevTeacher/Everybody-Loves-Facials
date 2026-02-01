@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Fruitable : MonoBehaviour
 {
@@ -13,4 +15,12 @@ public class Fruitable : MonoBehaviour
     }
     
     public Type type;
+    
+    private void Awake()
+    {
+        var values = Enum.GetValues(typeof(Type));
+        var rand = Random.Range(0, values.Length);
+        Type randomType = (Type)values.GetValue(rand);
+        type = randomType;
+    }
 }

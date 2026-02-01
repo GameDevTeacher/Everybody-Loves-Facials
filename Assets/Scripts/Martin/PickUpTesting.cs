@@ -21,6 +21,21 @@ public class PickUpTesting : MonoBehaviour
         _playerCream = GetComponent<Cream>();
         _playerFruitable = GetComponent<Fruitable>();
         _playerAttack = GetComponent<PlayerAttack>();
+        switch (_playerFruitable.type)
+        {
+            case Fruitable.Type.Cucumber:
+                fruitableRenderer.sprite = fruitableSliceType[0];
+                break;
+            case Fruitable.Type.Eggplant:
+                fruitableRenderer.sprite = fruitableSliceType[1];
+                break;
+            case Fruitable.Type.Orange:
+                fruitableRenderer.sprite = fruitableSliceType[2];
+                break;
+            case Fruitable.Type.Lemon:
+                fruitableRenderer.sprite = fruitableSliceType[3];
+                break;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

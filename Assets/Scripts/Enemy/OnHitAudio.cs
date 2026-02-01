@@ -13,14 +13,14 @@ public class OnHitAudio : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.transform.CompareTag("Cream"))
+        if (other.transform.CompareTag("CreamProjectile") || other.transform.CompareTag("FruitableProjectile"))
         {
-            _audioSource.PlayOneShot(clip);
-        }
-        
-        if (other.transform.CompareTag("Fruitable"))
-        {
-            _audioSource.PlayOneShot(clip);
+            _audioSource.clip = clip;
+            if (!_audioSource.isPlaying)
+            {
+                _audioSource.Play();
+            }
+            Destroy(other.gameObject);
         }
     }
 }

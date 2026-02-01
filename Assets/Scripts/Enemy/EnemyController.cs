@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -27,8 +26,6 @@ namespace Enemy
       public int score;
 
       [Header("Renderers")] 
-      public SpriteRenderer leftEyeRenderer;
-      public SpriteRenderer rightEyeRenderer;
       public SpriteRenderer faceMaskRenderer;
       
       [Header("Sprites")]
@@ -40,6 +37,7 @@ namespace Enemy
       [Header("Audio")] 
       public AudioClip success;
       public AudioClip nearby;
+     
       
 
       private void Start()
@@ -50,6 +48,9 @@ namespace Enemy
 
       private void Update()
       {
+
+         if (isFullyCreamed) return;
+         
          switch (creamLevel)
          {
             case CreamLevel.NoCream:
@@ -64,31 +65,12 @@ namespace Enemy
          }
       }
 
-      private void OnContactWhitCream()
+
+
+      public IEnumerator OnIsBeingCreamed()
       {
+         if (isFullyCreamed) yield break;
          
-      }
-
-      private void OnTriggerEnter(Collider other)
-      {
-         if (other.CompareTag("Cream"))
-         {
-            creamCounter += 0.5f;
-            print("Thanks for the cream Paddy: " + other.name);
-            StartCoroutine(OnIsBeingCreamed());
-         }
-
-         if (other.CompareTag("Fruitable"))
-         {
-            
-            StopCoroutine(OnIsBeingCreamed());
-         }
-         
-         Destroy(other.gameObject);
-      }
-
-      IEnumerator OnIsBeingCreamed()
-      {
          isBeingCreamed = true;
          if (Mathf.Approximately(creamCounter, 50f))
          {
@@ -100,9 +82,9 @@ namespace Enemy
          }
          
          yield return new WaitForSeconds(10f);
-         isFullyCreamed  = false;
+         isBeingCreamed = false;
          
-         if (isFullyCreamed == false)
+         if (isBeingCreamed == false)
          {
             creamCounter -= 0.5f;
          }

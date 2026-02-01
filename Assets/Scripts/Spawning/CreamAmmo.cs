@@ -21,7 +21,7 @@ public class CreamAmmo : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         cream = GetComponent<Cream>();
-        cream.type = (Cream.Type)Random.Range(0, Enum.GetValues(typeof(Cream.Type)).Length);
+        //cream.type = (Cream.Type)Random.Range(0, Enum.GetValues(typeof(Cream.Type)).Length);
         _spriteRenderer.sprite = creamSprites[(int)cream.type];
         _target = GameObject.FindGameObjectWithTag("Player").transform;
        

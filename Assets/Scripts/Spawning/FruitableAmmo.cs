@@ -22,7 +22,7 @@ public class FruitableAmmo : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         fruitable = GetComponent<Fruitable>();
-        fruitable.type = (Fruitable.Type)Random.Range(0, Enum.GetValues(typeof(Fruitable.Type)).Length);
+        //fruitable.type = (Fruitable.Type)Random.Range(0, Enum.GetValues(typeof(Fruitable.Type)).Length);
         _spriteRenderer.sprite = fruitableSprites[(int)fruitable.type];
         _target = GameObject.FindGameObjectWithTag("Player").transform;
         
