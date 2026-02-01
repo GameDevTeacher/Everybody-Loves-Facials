@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 public class FruitableAmmo : MonoBehaviour
 {
-    public int ammo = 3;
+    public int ammo = 4;
     public Sprite[] fruitableSprites;
     
     private SpriteRenderer _spriteRenderer;

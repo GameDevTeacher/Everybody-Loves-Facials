@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 public class CreamAmmo : MonoBehaviour
 {
-    public int ammo = 3;
+    public int ammo = 2000;
     public Sprite[] creamSprites;
 
     private SpriteRenderer _spriteRenderer;

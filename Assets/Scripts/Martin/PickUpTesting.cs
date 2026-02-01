@@ -1,20 +1,26 @@
 using UnityEngine;
+using Player;
 
 public class PickUpTesting : MonoBehaviour
 {
     private Cream _playerCream;
     private Fruitable _playerFruitable;
-
+    private PlayerAttack _playerAttack;
+    
     public Sprite[] creamGunType;
     public Sprite[] fruitableSliceType;
 
     public SpriteRenderer creamGunRenderer;
     public SpriteRenderer fruitableRenderer;
 
+    [SerializeField] private Weapon creamWeapon, fruitableWeapon;
+    
+
     private void Start()
     {
         _playerCream = GetComponent<Cream>();
         _playerFruitable = GetComponent<Fruitable>();
+        _playerAttack = GetComponent<PlayerAttack>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,6 +49,8 @@ public class PickUpTesting : MonoBehaviour
                     fruitableRenderer.sprite = fruitableSliceType[3];
                     break;
             }
+
+            fruitableWeapon.Reload(fruitableAmmo.ammo);
             
             fruitableAmmo.ResetSpawn();
             Destroy(other.gameObject);
@@ -72,6 +80,7 @@ public class PickUpTesting : MonoBehaviour
                     break;
             }
             
+            creamWeapon.Reload(creamAmmo.ammo);
             
             creamAmmo.ResetSpawn();
             Destroy(other.gameObject);
