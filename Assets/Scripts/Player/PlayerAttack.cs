@@ -9,7 +9,7 @@ namespace Player
         // This script ensures that the player can fire their weapon.
         
         [SerializeField] private Transform weaponHolder;
-        [SerializeField] private Transform[] weapons;
+        [SerializeField] public Transform[] weapons;
 
         private void Start()
         {
@@ -37,7 +37,7 @@ namespace Player
             }
         }
 
-        private Weapon GetCurrentChild()
+        public Weapon GetCurrentChild()
         {
             foreach (var weapon in weapons)
             {

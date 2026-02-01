@@ -430,6 +430,22 @@ PrefabInstance:
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 1522123095}
+    - target: {fileID: 996500077582510951, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: fireRate
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 996500077582510951, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: currentAmmo
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 996500077582510951, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: projectileSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 996500077582510951, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 4496258398208864345, guid: f655bca8f191e56418b155bd527c453e, type: 3}
     - target: {fileID: 1208836630833659684, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -438,6 +454,22 @@ PrefabInstance:
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 280032991}
+    - target: {fileID: 1925741975843721452, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: fireRate
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143082688530942442, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: _jumpSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: creamWeapon
+      value: 
+      objectReference: {fileID: 437163049}
+    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: fruitableWeapon
+      value: 
+      objectReference: {fileID: 618403098}
     - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
       propertyPath: creamGunRenderer
       value: 
@@ -446,6 +478,18 @@ PrefabInstance:
       propertyPath: fruitableRenderer
       value: 
       objectReference: {fileID: 217768496}
+    - target: {fileID: 6844587740136809466, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844587740136809466, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 6844587740136809466, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.017
+      objectReference: {fileID: 0}
     - target: {fileID: 8027349563713991249, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -790,6 +834,17 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &437163049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 996500077582510951, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+  m_PrefabInstance: {fileID: 217768495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b71df286b976d48a3cd904e1cc5334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
 --- !u!1 &526416514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 36a69469158f9484db2dbe5112eef5d2, type: 3}
@@ -936,6 +991,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674fef0a90044bcbaf79157013411c8, type: 3}
+--- !u!114 &618403098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1925741975843721452, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+  m_PrefabInstance: {fileID: 217768495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b71df286b976d48a3cd904e1cc5334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Weapon
 --- !u!1 &713507856
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,9 +15,9 @@ public class OnHitAudio : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        /*if (other.("Cream"))
+        if (other.transform.CompareTag("Cream"))
         {
             _audioSource.PlayOneShot(clip);
-        }*/
+        }
     }
 }

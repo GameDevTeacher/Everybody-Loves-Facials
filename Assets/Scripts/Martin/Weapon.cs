@@ -114,4 +114,10 @@ public class Weapon : MonoBehaviour
         var ray = cam.ScreenPointToRay(new Vector2(x, y));
         return ray.direction;
     }
+
+    public void Reload(float reloadAmmo)
+    {
+        currentAmmo = reloadAmmo;
+        ammoText.text = currentType + ": " + currentAmmo;
+    }
 }

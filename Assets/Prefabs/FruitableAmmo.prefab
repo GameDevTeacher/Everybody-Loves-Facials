@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34412de1e2f734d1fa05b9c975290308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitableAmmo
-  ammo: 3
+  ammo: 4
   fruitableSprites:
   - {fileID: 21300000, guid: 2b8a415983cc04d44b0ebaff9411bfbe, type: 3}
   - {fileID: 21300000, guid: bc9e037dc95bb4555a757fed44e049dd, type: 3}

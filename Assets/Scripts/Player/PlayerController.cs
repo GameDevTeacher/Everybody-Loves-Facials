@@ -23,7 +23,7 @@ namespace Player
         {
             _movement.UpdateMovement(_input.MoveDirection, _input.JumpPressed);
             _camera.UpdateLookDirection(_input.LookDirection);
-            _attack.UpdateShooting(_input.FireAction.WasPressedThisFrame());
+            _attack.UpdateShooting(_input.FireAction.IsPressed());
         }
     }
 }
