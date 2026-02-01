@@ -319,63 +319,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2464581938718858894, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c8314ebc16e2d437abe879885f33458f, type: 3}
     - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: creamGunType.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'creamGunType.Array.data[0]'
+      propertyPath: creamGunRenderer
       value: 
-      objectReference: {fileID: 21300000, guid: 8b7421d80c6254fe294d19b04c1ef5d0, type: 3}
+      objectReference: {fileID: 217768497}
     - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'creamGunType.Array.data[1]'
+      propertyPath: fruitableRenderer
       value: 
-      objectReference: {fileID: 21300000, guid: ebe974b88d71242adaa7eb7a6f6525d5, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'creamGunType.Array.data[2]'
-      value: 
-      objectReference: {fileID: 21300000, guid: afe942216a6be45ee8cf612dec560ce4, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'creamGunType.Array.data[3]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 169d0dcc41fee42d6b9bf88959b130ea, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'creamGunType.Array.data[4]'
-      value: 
-      objectReference: {fileID: 21300000, guid: aa5a524bd9cb8438e90fa20d87487552, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: fruitableSliceType.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'fruitableSliceType.Array.data[0]'
-      value: 
-      objectReference: {fileID: 21300000, guid: c8314ebc16e2d437abe879885f33458f, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'fruitableSliceType.Array.data[1]'
-      value: 
-      objectReference: {fileID: 21300000, guid: ab6fcbfdda36e4304ac412768fe39495, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'fruitableSliceType.Array.data[2]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 5244c949ef4804f95a4ab9f8e3f7e7c8, type: 3}
-    - target: {fileID: 5120345786677829772, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: 'fruitableSliceType.Array.data[3]'
-      value: 
-      objectReference: {fileID: 21300000, guid: c892416234cbe433e9f250016f86393a, type: 3}
-    - target: {fileID: 8027349563713991249, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8b7421d80c6254fe294d19b04c1ef5d0, type: 3}
+      objectReference: {fileID: 217768496}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+--- !u!212 &217768496 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2464581938718858894, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+  m_PrefabInstance: {fileID: 217768495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &217768497 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8027349563713991249, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+  m_PrefabInstance: {fileID: 217768495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &326755385
 PrefabInstance:
   m_ObjectHideFlags: 0

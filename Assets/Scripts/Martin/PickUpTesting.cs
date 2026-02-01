@@ -8,6 +8,9 @@ public class PickUpTesting : MonoBehaviour
     public Sprite[] creamGunType;
     public Sprite[] fruitableSliceType;
 
+    public SpriteRenderer creamGunRenderer;
+    public SpriteRenderer fruitableRenderer;
+
     private void Start()
     {
         _playerCream = GetComponent<Cream>();
