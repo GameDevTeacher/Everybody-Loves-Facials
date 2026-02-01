@@ -5,6 +5,7 @@ namespace Enemy
 {
    public class EnemyController : MonoBehaviour
    {
+      [Header("Creaming")]
       public Cream preferredCream;
       public Fruitable preferredFruitable;
 
@@ -24,19 +25,46 @@ namespace Enemy
       public float creamometer;
       public int score;
 
+      [Header("Renderers")] 
+      public SpriteRenderer leftEyeRenderer;
+      public SpriteRenderer rightEyeRenderer;
+      public SpriteRenderer faceMaskRenderer;
+      
+      [Header("Sprites")]
+      public Sprite creamed;
+      public Sprite thickCream;
+
+      public Sprite[] fruitableSlices;
+
+      [Header("Audio")] 
+      public AudioClip success;
+      public AudioClip chest;
+      public AudioClip bottom;
+      public AudioClip nearby;
+      
+
       private void Start()
       {
          preferredCream = GetComponent<Cream>();
          preferredFruitable = GetComponent<Fruitable>();
-         /*Array fruitableValues = Enum.GetValues(typeof(Preferred_Fruitable));
-         Array creamValues = Enum.GetValues(typeof(Preferred_Cream));
-         
-         preferredFruitable = (Preferred_Fruitable)fruitableValues.GetValue(Random.Range(0, fruitableValues.Length));
-         preferredCream = (Preferred_Cream)creamValues.GetValue(Random.Range(0, creamValues.Length));
-         
-         */
       }
-      
+
+      private void Update()
+      {
+         switch (creamLevel)
+         {
+            case CreamLevel.NoCream:
+               faceMaskRenderer.sprite = null;
+               break;
+            case CreamLevel.Creamed:
+               faceMaskRenderer.sprite = creamed;
+               break;
+            case CreamLevel.ThickCream:
+               faceMaskRenderer.sprite = thickCream;
+               break;
+         }
+      }
+
       private void OnTriggerEnter(Collider other)
       {
          if (other.CompareTag("Cream"))

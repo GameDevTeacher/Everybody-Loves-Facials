@@ -9,6 +9,9 @@ TagManager:
   - EnemyProjectile
   - Fruitable
   - Cream
+  - Face
+  - Chest
+  - Bottom
   layers:
   - Default
   - TransparentFX
