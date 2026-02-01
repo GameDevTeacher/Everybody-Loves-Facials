@@ -6,37 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Aloe Vera.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Aloe Vera.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Himalayan Pink Salt.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Himalayan Pink Salt.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Lab Made.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Lab Made.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Natural.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Creams/Natural.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Apple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Apple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Broccoli.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Broccoli.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Cucumber.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Cucumber.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Eggplant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Eggplant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Lemon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Lemon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Orange.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Orange.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Potato.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fruitables/Potato.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/CreamAmmo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/CreamAmmo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/FruitableAmmo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/FruitableAmmo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Cucumber.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Cucumber.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Eggplant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Eggplant.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Lemon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Lemon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Orange.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslices.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslices.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslicesTHUMB.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslicesTHUMB.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +118,8 @@
       <workItem from="1769876755570" duration="3248000" />
       <workItem from="1769891599997" duration="704000" />
       <workItem from="1769892315490" duration="2671000" />
-      <workItem from="1769901483114" duration="828000" />
+      <workItem from="1769901483114" duration="3623000" />
+      <workItem from="1769934953548" duration="2616000" />
     </task>
     <servers />
   </component>

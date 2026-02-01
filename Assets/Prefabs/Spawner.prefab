@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnController
   spawnableObjects:
-  - {fileID: 3777919507435217750, guid: 3b0375acc5e68452bbe878d3140e00ca, type: 3}
-  - {fileID: 4111980231425784975, guid: 19d1c0968fef64591944173c899d56d6, type: 3}
+  - {fileID: 2157426735030354545, guid: 19d1c0968fef64591944173c899d56d6, type: 3}
+  - {fileID: 7616528510578938966, guid: 76f1426c1b01641be97997e49096b7d5, type: 3}
   currentSpawnedObject: {fileID: 0}
   spawnPoint: {fileID: 5970671262809973678}
   spawnTime: 10

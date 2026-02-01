@@ -1063,6 +1063,10 @@ PrefabInstance:
       propertyPath: 'objectsToDeactivate.Array.data[2]'
       value: 
       objectReference: {fileID: 1940101988}
+    - target: {fileID: 2704556861866537075, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7150417028979758447, guid: 4f1b532908e45d0469aea09f422320f9, type: 3}
       propertyPath: weaponUI
       value: 
@@ -1168,17 +1172,12 @@ PrefabInstance:
     - target: {fileID: 8160578883420017938, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
       propertyPath: _projectileSpawnPoint
       value: 
-      objectReference: {fileID: 6325872891632805214}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
---- !u!4 &6325872891632805214 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3834756263215921658, guid: e2c22d170db10e349909cb1e759f22b1, type: 3}
-  m_PrefabInstance: {fileID: 6325872891632805213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

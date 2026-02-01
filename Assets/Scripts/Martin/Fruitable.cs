@@ -9,9 +9,6 @@ public class Fruitable : MonoBehaviour
         Cucumber,
         Eggplant,
         Orange,
-        Apple,
-        Potato,
-        Broccoli,
         Lemon
     }
     
