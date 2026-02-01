@@ -303,7 +303,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: aa5a524bd9cb8438e90fa20d87487552, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b7421d80c6254fe294d19b04c1ef5d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -638,6 +638,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47248024d3a3254468a70172ad2d73d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUpTesting
+  creamGunType:
+  - {fileID: 21300000, guid: 8b7421d80c6254fe294d19b04c1ef5d0, type: 3}
+  - {fileID: 21300000, guid: ebe974b88d71242adaa7eb7a6f6525d5, type: 3}
+  - {fileID: 21300000, guid: afe942216a6be45ee8cf612dec560ce4, type: 3}
+  - {fileID: 21300000, guid: 169d0dcc41fee42d6b9bf88959b130ea, type: 3}
+  fruitableSliceType:
+  - {fileID: 21300000, guid: c8314ebc16e2d437abe879885f33458f, type: 3}
+  - {fileID: 21300000, guid: ab6fcbfdda36e4304ac412768fe39495, type: 3}
+  - {fileID: 21300000, guid: 5244c949ef4804f95a4ab9f8e3f7e7c8, type: 3}
+  - {fileID: 21300000, guid: c892416234cbe433e9f250016f86393a, type: 3}
 --- !u!114 &4725339536876383053
 MonoBehaviour:
   m_ObjectHideFlags: 0
