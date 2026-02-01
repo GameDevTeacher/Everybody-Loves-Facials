@@ -1,5 +1,3 @@
-using System;
-using Enemy;
 using UnityEngine;
 
 public class OnHitAudio : MonoBehaviour
@@ -10,7 +8,7 @@ public class OnHitAudio : MonoBehaviour
 
     private void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponentInParent<AudioSource>();
     }
 
     void OnCollisionEnter(Collision other)
