@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -38,8 +39,6 @@ namespace Enemy
 
       [Header("Audio")] 
       public AudioClip success;
-      public AudioClip chest;
-      public AudioClip bottom;
       public AudioClip nearby;
       
 
@@ -65,6 +64,11 @@ namespace Enemy
          }
       }
 
+      private void OnContactWhitCream()
+      {
+         
+      }
+
       private void OnTriggerEnter(Collider other)
       {
          if (other.CompareTag("Cream"))
@@ -76,8 +80,14 @@ namespace Enemy
 
          if (other.CompareTag("Fruitable"))
          {
-            
+            if (isFullyCreamed == true)
+            {
+               score++;
+               StopCoroutine(OnIsBeingCreamed());
+            }
          }
+         
+         
          Destroy(other.gameObject);
       }
 
@@ -86,6 +96,7 @@ namespace Enemy
          isBeingCreamed = true;
          if (Mathf.Approximately(creamCounter, 50f))
          {
+            
             isFullyCreamed = true;
          }
          yield return new WaitForSeconds(10f);
@@ -97,6 +108,7 @@ namespace Enemy
             creamCounter -= 0.5f;
          }
       }
+
       
    }
 }
