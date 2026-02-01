@@ -39,8 +39,6 @@ namespace Enemy
 
       [Header("Audio")] 
       public AudioClip success;
-      public AudioClip chest;
-      public AudioClip bottom;
       public AudioClip nearby;
       
 
@@ -88,6 +86,8 @@ namespace Enemy
                StopCoroutine(OnIsBeingCreamed());
             }
          }
+         
+         
          Destroy(other.gameObject);
       }
 
@@ -96,6 +96,7 @@ namespace Enemy
          isBeingCreamed = true;
          if (Mathf.Approximately(creamCounter, 50f))
          {
+            
             isFullyCreamed = true;
          }
          yield return new WaitForSeconds(10f);
@@ -108,9 +109,6 @@ namespace Enemy
          }
       }
 
-      public void OnAudioFilterRead(float[] data, int channels)
-      {
-         
-      }
+      
    }
 }

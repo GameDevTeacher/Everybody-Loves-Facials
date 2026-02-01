@@ -63,6 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497685481538393980}
   - component: {fileID: 2740946437160531970}
+  - component: {fileID: 3459821260600678411}
   m_Layer: 0
   m_Name: ChestCollider
   m_TagString: Chest
@@ -106,6 +107,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.41, y: 0.25, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3459821260600678411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689871327841535118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8ac41226032e499a32fc31066ad51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioSource
 --- !u!1 &5910411067119120384
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 349164173406294503}
   - component: {fileID: 4574361487754571540}
+  - component: {fileID: 2128808497734689708}
   m_Layer: 0
   m_Name: BottomCollider
   m_TagString: Bottom
@@ -542,6 +556,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.52, y: 0.3, z: 0.24}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2128808497734689708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008833077132776094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8ac41226032e499a32fc31066ad51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioSource
 --- !u!1 &8895838748213252839
 GameObject:
   m_ObjectHideFlags: 0
