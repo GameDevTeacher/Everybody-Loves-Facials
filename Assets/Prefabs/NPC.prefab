@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7111693707450723410}
   - component: {fileID: 7349497191438459074}
+  - component: {fileID: 3422164498126915537}
   m_Layer: 0
   m_Name: FaceCollider
   m_TagString: Face
@@ -53,6 +54,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3422164498126915537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3919559532573663052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663e8bb0c2bc6bb40aef9a398ad72791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Eyes
+  eyeSprites:
+  - {fileID: 1681284641038989049}
+  - {fileID: 5134534805171806656}
 --- !u!1 &4689871327841535118
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +79,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497685481538393980}
   - component: {fileID: 2740946437160531970}
-  - component: {fileID: 3459821260600678411}
+  - component: {fileID: 112353455999522558}
   m_Layer: 0
   m_Name: ChestCollider
   m_TagString: Chest
@@ -107,7 +123,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.41, y: 0.25, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3459821260600678411
+--- !u!114 &112353455999522558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,9 +132,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4689871327841535118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46f8ac41226032e499a32fc31066ad51, type: 3}
+  m_Script: {fileID: 11500000, guid: 08f2a02d448777043b9b4d1dc70c3e4d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioSource
+  m_EditorClassIdentifier: Assembly-CSharp::OnHitAudio
+  clip: {fileID: 8300000, guid: bf672843d8c1b4e42a6af6f1f3ac78db, type: 3}
 --- !u!1 &5910411067119120384
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,8 +361,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5244c949ef4804f95a4ab9f8e3f7e7c8, type: 3}
   - {fileID: 21300000, guid: c892416234cbe433e9f250016f86393a, type: 3}
   success: {fileID: 0}
-  chest: {fileID: 0}
-  bottom: {fileID: 0}
   nearby: {fileID: 0}
 --- !u!114 &873666630706242996
 MonoBehaviour:
@@ -512,7 +527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 349164173406294503}
   - component: {fileID: 4574361487754571540}
-  - component: {fileID: 2128808497734689708}
+  - component: {fileID: 4241563915400689453}
   m_Layer: 0
   m_Name: BottomCollider
   m_TagString: Bottom
@@ -556,7 +571,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.52, y: 0.3, z: 0.24}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2128808497734689708
+--- !u!114 &4241563915400689453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,9 +580,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8008833077132776094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46f8ac41226032e499a32fc31066ad51, type: 3}
+  m_Script: {fileID: 11500000, guid: 08f2a02d448777043b9b4d1dc70c3e4d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioSource
+  m_EditorClassIdentifier: Assembly-CSharp::OnHitAudio
+  clip: {fileID: 8300000, guid: 745f5a9bbb2a9624db20ee695649465d, type: 3}
 --- !u!1 &8895838748213252839
 GameObject:
   m_ObjectHideFlags: 0
