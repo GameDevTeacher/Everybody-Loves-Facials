@@ -160,8 +160,8 @@ GameObject:
   - component: {fileID: 8679068317877850651}
   - component: {fileID: 8504116549121857752}
   - component: {fileID: 5120345786677829772}
-  - component: {fileID: 5196646693679109223}
-  - component: {fileID: 1514929495929394189}
+  - component: {fileID: 4725339536876383053}
+  - component: {fileID: 8025066190249805494}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
   _playerCamera: {fileID: 1032751640593444911}
-  _cursorSensitivity: 0.02
+  _cursorSensitivity: 0.72
   _cursorSmoothTime: 0.03
   _lockCursor: 1
 --- !u!114 &8679068317877850651
@@ -328,13 +328,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208836630833659684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcaf038e12efb5d469531504ad850cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   weaponHolder: {fileID: 4915789262104549109}
-  weapons: []
+  weapons:
+  - {fileID: 3102502356317056469}
+  - {fileID: 5908541272240840491}
 --- !u!143 &8504116549121857752
 CharacterController:
   m_ObjectHideFlags: 0
@@ -372,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47248024d3a3254468a70172ad2d73d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUpTesting
---- !u!114 &5196646693679109223
+--- !u!114 &4725339536876383053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cream
   type: 0
---- !u!114 &1514929495929394189
+--- !u!114 &8025066190249805494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,7 +418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3102502356317056469
 Transform:
   m_ObjectHideFlags: 0
@@ -497,7 +499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704556861866537075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77b71df286b976d48a3cd904e1cc5334, type: 3}
   m_Name: 
@@ -510,8 +512,8 @@ MonoBehaviour:
   maxAmmo: 3
   fireRate: 0.3
   cam: {fileID: 1386487982518312080}
-  playerCream: {fileID: 5196646693679109223}
-  playerFruitable: {fileID: 1514929495929394189}
+  playerCream: {fileID: 4725339536876383053}
+  playerFruitable: {fileID: 8025066190249805494}
   weaponUI: {fileID: 0}
   objectsToDeactivate:
   - {fileID: 0}
@@ -752,17 +754,21 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: currentAmmo
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: playerCream
       value: 
-      objectReference: {fileID: 5196646693679109223}
+      objectReference: {fileID: 4725339536876383053}
     - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: playerFruitable
       value: 
-      objectReference: {fileID: 1514929495929394189}
+      objectReference: {fileID: 8025066190249805494}
     - target: {fileID: 7561129786691277863, guid: 5d7626bfd2a3d2044a386123c5d834e7, type: 3}
       propertyPath: projectilePrefab
       value: 
