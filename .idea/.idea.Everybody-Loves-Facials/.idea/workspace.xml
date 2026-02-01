@@ -6,20 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fc3b9e72-a5e5-4719-835d-10dda5db0e17" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Everybody-Loves-Facials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NPC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/bathman.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/bathman.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/bathmancream1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/bathmancream1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/bathmancream2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/bathmancream2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/lieman.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/lieman.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/liemancream1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/liemancream1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/liemancream2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/liemancream2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/markus.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/markus.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/markuscream1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/markuscream1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/markuscream2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/markuscream2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/sitman.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/sitman.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/sitmancream1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/sitmancream1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Men/sitmancream2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Men/sitmancream2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Cucumber.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Cucumber.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Eggplant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Eggplant.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Lemon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Lemon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fruitable Slices/2D_Slice_Orange.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslices.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslices.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslicesTHUMB.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Hands/handholdingslicesTHUMB.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +119,7 @@
       <workItem from="1769891599997" duration="704000" />
       <workItem from="1769892315490" duration="2671000" />
       <workItem from="1769901483114" duration="3623000" />
-      <workItem from="1769934953548" duration="927000" />
+      <workItem from="1769934953548" duration="2616000" />
     </task>
     <servers />
   </component>
