@@ -6,12 +6,13 @@ TagManager:
   tags:
   - Projectile
   - Enemy
-  - EnemyProjectile
   - Fruitable
   - Cream
   - Face
   - Chest
   - Bottom
+  - CreamProjectile
+  - FruitableProjectile
   layers:
   - Default
   - TransparentFX
