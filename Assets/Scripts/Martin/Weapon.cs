@@ -30,6 +30,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Cream playerCream;
     [SerializeField] private Fruitable playerFruitable;
     [SerializeField] private GameObject weaponUI;
+    [SerializeField] private Sprite[] fruitableSprites;
 
     [Header("Deactivating")]
     public List<GameObject> objectsToDeactivate;
@@ -40,8 +41,6 @@ public class Weapon : MonoBehaviour
 
     public void UpdateCream(bool shoot)
     {
-        
-        
         if (!shoot || !(currentAmmo > 0) || !(_fireRateCounter < Time.time)) return;
         
         var projectileClone = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
@@ -70,9 +69,26 @@ public class Weapon : MonoBehaviour
         projectileClone.TryGetComponent(out Fruitable fruitable);
         fruitable.type = playerFruitable.type;
         
+        projectileClone.TryGetComponent(out SpriteRenderer spriteRenderer);
+
+        switch (fruitable.type)
+        {
+            case Fruitable.Type.Cucumber:
+                spriteRenderer.sprite = fruitableSprites[0];
+                break;
+            case Fruitable.Type.Eggplant:
+                spriteRenderer.sprite = fruitableSprites[1];
+                break;
+            case Fruitable.Type.Orange:
+                spriteRenderer.sprite = fruitableSprites[2];
+                break;
+            case Fruitable.Type.Lemon:
+                spriteRenderer.sprite = fruitableSprites[3];
+                break;
+        }
+        
         currentAmmo--;
         _fireRateCounter = Time.time + fireRate;
-        DeactivateNextObject();
     }
 
     private void DeactivateNextObject()
