@@ -11,9 +11,14 @@ public class OnHitAudio : MonoBehaviour
         _audioSource = GetComponentInParent<AudioSource>();
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Cream"))
+        {
+            _audioSource.PlayOneShot(clip);
+        }
+        
+        if (other.transform.CompareTag("Fruitable"))
         {
             _audioSource.PlayOneShot(clip);
         }
