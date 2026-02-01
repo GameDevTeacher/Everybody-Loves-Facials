@@ -1,5 +1,3 @@
-using System;
-using Enemy;
 using UnityEngine;
 
 public class OnHitAudio : MonoBehaviour
@@ -10,12 +8,17 @@ public class OnHitAudio : MonoBehaviour
 
     private void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponentInParent<AudioSource>();
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Cream"))
+        {
+            _audioSource.PlayOneShot(clip);
+        }
+        
+        if (other.transform.CompareTag("Fruitable"))
         {
             _audioSource.PlayOneShot(clip);
         }
