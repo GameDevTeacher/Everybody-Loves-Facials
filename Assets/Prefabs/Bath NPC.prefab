@@ -420,8 +420,6 @@ MonoBehaviour:
   creamCounter: 2
   creamometer: 0
   score: 0
-  leftEyeRenderer: {fileID: 5134534805171806656}
-  rightEyeRenderer: {fileID: 1681284641038989049}
   faceMaskRenderer: {fileID: 1990819161849333882}
   creamed: {fileID: 21300000, guid: 3bed871fb4d4e674d90f4f0633a6b416, type: 3}
   thickCream: {fileID: 21300000, guid: c991e0f878a7c3a4f86b2f31b3397662, type: 3}
@@ -481,7 +479,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6717580576162289980}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
